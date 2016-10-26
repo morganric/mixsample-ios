@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MixSample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="MixSample" id="BYZ-38-t0r" customClass="ViewController" customModule="MixSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-7l-vyF">
+                                <rect key="frame" x="0.0" y="20" width="600" height="530"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-KU-j7G" customClass="DFPBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HTI-KU-j7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Yr-dY-Iwh"/>
+                            <constraint firstItem="EHi-7l-vyF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="CDN-g5-nK7"/>
+                            <constraint firstItem="EHi-7l-vyF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JYw-sc-lwO"/>
+                            <constraint firstItem="HTI-KU-j7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LuV-OG-T9E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHi-7l-vyF" secondAttribute="trailing" constant="-20" id="S2b-KN-Psu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EHi-7l-vyF" secondAttribute="bottom" id="Vne-c4-9kR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHi-7l-vyF" secondAttribute="trailing" constant="20" id="Z6t-FP-0K7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HTI-KU-j7G" secondAttribute="bottom" id="lnc-97-HiT"/>
+                            <constraint firstItem="EHi-7l-vyF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="t9k-7v-BGI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHi-7l-vyF" secondAttribute="trailing" id="xi0-jS-4V4"/>
+                            <constraint firstItem="EHi-7l-vyF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yac-3b-0Kb"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="bannerView" destination="HTI-KU-j7G" id="frn-OF-0jU"/>
+                        <outlet property="webView" destination="EHi-7l-vyF" id="hgm-zB-XEY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+    </scenes>
+</document>
